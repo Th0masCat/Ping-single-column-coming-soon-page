@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --Blue: rgb(79, 125, 243);
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--Gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  min-width: 300px;
+}
+
+.main_img {
+  max-width: 60%;
+}
+
+.launch_heading {
+  font-weight: 100;
+  padding-bottom: 0%;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.soon {
+  font-weight: 700;
+  color: black;
+}
+
+.subscribe_text {
+  font-weight: 100;
+  margin-top: 0px;
+  font-size: 15px;
+  color: black;
+}
+
+.email_field {
+  margin: 5px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.copy_text {
+  font-size: 14px;
+}
+
+.logo_img {
+  max-width: 10%;
+}
+
+#text_box {
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: var(--PaleBlue);
+  font-size: 8px;
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#notify_button {
+  border-radius: 15px;
+  border: none;
+  background-color: var(--Blue);
+  color: white;
+  font-size: 8px;
+  font-weight: 550;
+  padding: 8px;
+  width: 100px;
+  box-shadow: 0.5px 2px rgba(79, 125, 243, 0.212);
+  cursor: pointer;
+}
+
+#text_box:invalid {
+  border-color: var(--LightRed);
+}
+
+#error_text {
+  color: var(--LightRed);
+  font-size: 7px;
+  font-style: italic;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 70px;
+}
+
+.logo {
+  color: var(--Blue);
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px;
+  border: 1px solid rgba(79, 125, 243, 0.358);
+}
+
+.logo:hover {
+  color: white;
+  background-color: var(--Blue);
+}
+
+.social {
+  border: none;
+  background: none;
+  size: 2;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .launch_heading {
+    font-size: 20px;
+  }
+
+  .subscribe_text {
+    font-size: 10px;
+  }
+
+  .email_field {
+    margin-left: 40px;
+  }
+
+  #text_box {
+    width: 200px;
+    margin-bottom: 7px;
+  }
+
+  #notify_button {
+    width: 200px;
+    margin-left: 10px;
+  }
+}

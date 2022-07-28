@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo_img" src="/images/logo.svg" alt="logo_img" />
+      <h2 class="launch_heading">
+        We are launching <span class="soon">soon!</span>
+      </h2>
+      <h3 class="subscribe_text">Subscribe and get notified</h3>
+      <form action="" method="post" class="email_field">
+        <span id="form_field">
+          <input
+            type="email"
+            id="text_box"
+            placeholder="Your email address..."
+          />
+          <button id="notify_button" type="submit">Notify Me</button>
+          <p id="error_text"></p>
+        </span>
+      </form>
+      <img
+        class="main_img"
+        src="/images/illustration-dashboard.png"
+        alt="main_img"
+      />
+
+      <footer>
+        <div class="icons">
+          <button class="social">
+            <ion-icon name="logo-facebook" class="logo"></ion-icon>
+          </button>
+          <button class="social">
+            <ion-icon name="logo-twitter" class="logo"></ion-icon>
+          </button>
+          <button class="social">
+            <ion-icon name="logo-instagram" class="logo"></ion-icon>
+          </button>
+        </div>
+        <p class="copy_text">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
