@@ -10,3 +10,10 @@ emailButton.addEventListener("click", function (){
         errorText.innerText = "Please provide a valid email address"
     }
 })
+
+document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    document.getElementById("form_field").focus();
+  };
+})(), true);
